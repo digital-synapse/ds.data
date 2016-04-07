@@ -268,5 +268,22 @@ describe('Array2', () => {
         });
 
     });        
+
+    describe('#copy', () => {                
+
+        it('should return a new object', () => {                       
+                        
+            if (subject == subject.copy())
+                    throw new Error('expected a new object');                       
+        });
+        it('should copy by value', () => {                       
+            
+            var expected = subject.toString();
+            var copy = subject.copy().toString();
+            if (copy != expected)
+                    throw new Error('expected 1:1 data copy');                       
+        });
+
+    });        
             
 });

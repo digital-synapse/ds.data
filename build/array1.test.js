@@ -123,4 +123,16 @@ describe('Array1', function () {
                 throw new Error('expected each to break');
         });
     });
+    describe('#copy', function () {
+        it('should return a new object', function () {
+            if (subject == subject.copy())
+                throw new Error('expected a new object');
+        });
+        it('should copy by value', function () {
+            var expected = subject.toString();
+            var copy = subject.copy().toString();
+            if (copy != expected)
+                throw new Error('expected 1:1 data copy');
+        });
+    });
 });

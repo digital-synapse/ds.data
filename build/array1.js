@@ -77,6 +77,9 @@ var Array1 = (function (_super) {
         }
         return hash;
     };
+    Array1.prototype.copy = function () {
+        return new Array1(this);
+    };
     return Array1;
 }(Array));
 exports.Array1 = Array1;

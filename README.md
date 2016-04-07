@@ -1,6 +1,7 @@
 # ds.data
 Typescript classes to deal with arrays, lists, and more complex data structures.
 
+The Array classes (Array1 and Array2) subclass Array<T> so all of the normal javascript array methods (ie. push, pop, filter, map) should be available.
 ```
   Array1
     #constructor
@@ -30,6 +31,9 @@ Typescript classes to deal with arrays, lists, and more complex data structures.
       √ should enumerate the collection
       √ should preserve the calling context
       √ should break if a value is returned
+    #copy
+      √ should return a new object
+      √ should copy by value
 
   Array2
     #constructor
@@ -72,7 +76,10 @@ Typescript classes to deal with arrays, lists, and more complex data structures.
       √ should break if a value is returned
     #flatten
       √ should flatten the 2D array to a 1D Array
+    #copy
+      √ should return a new object
+      √ should copy by value
 
 
-  44 passing (131ms)
+  48 passing (141ms)      
 ```

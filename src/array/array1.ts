@@ -79,5 +79,9 @@ export class Array1<T> extends Array<T> {
         }
         return hash;        
     }    
+    
+    public copy(): Array1<T>{
+        return new Array1<T>(this);
+    }
 }
 
