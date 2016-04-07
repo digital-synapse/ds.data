@@ -1,0 +1,16 @@
+{
+  "name": "ds.data",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ds.data.js",
+  "scripts": {
+    "test": "ntsc && mocha --recursive ./build",
+    "start": "ntsc && node build/ds.data.js"
+  },
+  "author": "dss <digital.synapse.software@gmail.com> (dsscode.cf)",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^2.4.5",
+    "tsd": "^0.6.5"
+  }
+}
