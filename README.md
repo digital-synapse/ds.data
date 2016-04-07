@@ -18,7 +18,7 @@ Example:
   console.log(a.resize(2,1).rotateClockwise().column(0).sum());  // prints '3'
 ```
 
-The Array classes (Array1 and Array2) subclass Array<T> so all of the normal javascript array methods (ie. push, pop, filter, map) should be available.
+Tests:
 ```
   Array1
     #constructor
